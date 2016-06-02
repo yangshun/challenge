@@ -10,15 +10,52 @@
 
     <h1> Hotels </h1>
     <ul>
+      <div id="abcd">
+        <h2> <%= hoteldata.hotels[0].name %></h2>
+        <h4> <%= hoteldata.hotels[0].address %></h4>
+        <h4 class ="competitor1"> </h4>
+        <h4 class ="competitor2"> </h4>
+        <h4 class ="competitor3"> </h4>
+        <img src= "<%= hoteldata.hotels[0].image%>">
+      </div>
+      <div id="defg">
+        <h2> <%= hoteldata.hotels[1].name %></h2>
+        <h4> <%= hoteldata.hotels[1].address %></h4>
+          <h4 class ="competitor1"> </h4>
+          <h4 class ="competitor2"> </h4>
+          <h4 class ="competitor3"> </h4>
+        <img src= "<%= hoteldata.hotels[1].image%>">
+      </div>
+      <div id="hijk">
+        <h2> <%= hoteldata.hotels[2].name %></h2>
+        <h4> <%= hoteldata.hotels[2].address %></h4>
+          <h4 class ="competitor1"> </h4>
+          <h4 class ="competitor2"> </h4>
+          <h4 class ="competitor3"> </h4>
+        <img src= "<%= hoteldata.hotels[2].image%>">
+      </div>
+      <div id="mnop">
+        <h2> <%= hoteldata.hotels[3].name %></h2>
+        <h4> <%= hoteldata.hotels[3].address %></h4>
+          <h4 class ="competitor1"> </h4>
+          <h4 class ="competitor2"> </h4>
+          <h4 class ="competitor3"> </h4>
+        <img src= "<%= hoteldata.hotels[3].image%>">
+      </div>
+    </ul>
+
+
+
+    <!-- <ul>
       <% hoteldata.hotels.forEach(function(item){ %>
       <h2> <%= item.name %> </h2>
       <h4> <%= item.address %> <h4>
-      <h4 id="price1"> <%= item.id %> </h4>
-      <h4 id="price2"> <%= item.id %> </h4>
-      <h4 id="price3"> <%= item.id %> </h4>
+      <h4 id='competitor1'> <%= item.id %> <h4>
+      <h4 id='competitor2'> <%= item.id %> <h4>
+      <h4 id='competitor3'> <%= item.id %> <h4>
       <img src= "<%= item.image %>">
       <%  }); %>
-    </ul>
+    </ul> -->
 
 
     <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
