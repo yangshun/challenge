@@ -2,12 +2,13 @@ var express = require('express');
 var app = express();
 var request = require('request');
 
+//set our port
 var port = process.env.PORT || 3000;
 
 app.listen(3000, function(){
   console.log(`server started on ${port}`);
 })
-
+app.use(express.static('./js'))
 app.set('view engine', 'ejs');
 
 //home
