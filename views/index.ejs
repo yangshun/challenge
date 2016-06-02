@@ -2,13 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hotels and Prices</title>
+    <title>Hotels in Singapore</title>
     <script defer src="index.js"></script>
+
   </head>
   <body>
-    <h1> <%= title %></h1>
-  
 
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <h1> Hotels </h1>
+    <ul>
+      <% hoteldata.hotels.forEach(function(item){ %>
+      <h2> <%= item.name %> </h2>
+      <h4> <%= item.address %> <h4>
+      <h4 id="price1"> <%= item.id %> </h4>
+      <h4 id="price2"> <%= item.id %> </h4>
+      <h4 id="price3"> <%= item.id %> </h4>
+      <img src= "<%= item.image %>">
+      <%  }); %>
+    </ul>
+
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
   </body>
 </html>

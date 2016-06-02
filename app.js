@@ -13,18 +13,17 @@ app.set('view engine', 'ejs');
 
 //home
 app.get('/', function(req, res){
-  res.render('index', {
-    title: "Hotels in Singapore"
-  });
+  res.render('index');
 });
 
+app.locals.hoteldata = require('./hoteldata.json');
 
-app.get('/api', function(req,res,done) {
-  request.get("https://api.myjson.com/bins/1c80k", function (err, response, body) {
-    if (err) throw err
-    res.json(JSON.parse(body))
-  })
-})
+// app.get('/api', function(req,res,done) {
+//   request.get("https://api.myjson.com/bins/1c80k", function (err, response, body) {
+//     if (err) throw err
+//     res.json(JSON.parse(body))
+//   })
+// })
 
 app.get('/api1', function(req,res,done) {
   request.get("https://api.myjson.com/bins/2tlb8", function (err, response, body) {
