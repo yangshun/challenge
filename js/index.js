@@ -23,35 +23,43 @@ $(function(){
     type:'GET',
     url:'/api1',
     success: function(data1){
-      console.log (data1);
-      $('.competitor1', "#abcd").append('<p> Marriott: ' + data1.abcd + '</p>')
-      $('.competitor1', "#defg").append('<p> Pan Pacific: ' + data1.defg + '</p>')
-      $('.competitor1', "#hijk").append('<p> Marina Mandarin: ' + data1.hijk + '</p>')
-      $('.competitor1', "#mnop").append('<p> Grand Hyatt: ' + data1.mnop + '</p>')
-
-
+      $('.competitor1', "#abcd").append('<p> Competitor 1: ' + data1.abcd + '</p>')
+      $('.competitor1', "#defg").append('<p> Competitor 1: ' + data1.defg + '</p>')
+      $('.competitor1', "#hijk").append('<p> Competitor 1: ' + data1.hijk + '</p>')
+      $('.competitor1', "#mnop").append('<p> Competitor 1: ' + data1.mnop + '</p>')
+      if (data1.abcd || data1.defg || data1.hijk || data1.mnop === 'undefined') {
+        console.log("All Rooms Booked")
+      }
     }
   });
   $.ajax({
     type:'GET',
     url:'/api2',
     success: function(data2){
-      // console.log (data2);
-      $('.competitor2', "#abcd").append('<p> Marriott: ' + data2.abcd + '</p>')
-      $('.competitor2', "#defg").append('<p> Pan Pacific: ' + data2.defg + '</p>')
-      $('.competitor2', "#hijk").append('<p> Marina Mandarin: ' + data2.hijk + '</p>')
-      $('.competitor2', "#mnop").append('<p> Grand Hyatt:  ' + data2.mnop + '</p>')
+      $('.competitor2', "#abcd").append('<p> Competitor 2: ' + data2.abcd + '</p>')
+      $('.competitor2', "#defg").append('<p> Competitor 2: ' + data2.defg + '</p>')
+      $('.competitor2', "#hijk").append('<p> Competitor 2: ' + data2.hijk + '</p>')
+      $('.competitor2', "#mnop").append('<p> Competitor 2: ' + data2.mnop + '</p>')
+      if (data2.abcd || data2.defg || data2.hijk || data2.mnop === 'undefined') {
+        console.log("All Rooms Booked")
+      }
     }
   });
+
   $.ajax({
     type:'GET',
     url:'/api3',
     success: function(data3){
       // console.log (data3);
-      $('.competitor3', "#abcd").append('<p> Marriott: ' + data3.abcd + '</p>')
-      $('.competitor3', "#defg").append('<p> Pan Pacific: ' + data3.defg + '</p>')
-      $('.competitor3', "#hijk").append('<p> Marina Mandarin: ' + data3.hijk + '</p>')
-      $('.competitor3', "#mnop").append('<p>  Grand Hyatt:  ' + data3.mnop + '</p>')
+      $('.competitor3', "#abcd").append('<p> Competitor 3: ' + data3.abcd + '</p>')
+      $('.competitor3', "#defg").append('<p> Competitor 3: ' + data3.defg + '</p>')
+      $('.competitor3', "#hijk").append('<p> Competitor 3: ' + data3.hijk + '</p>')
+      $('.competitor3', "#mnop").append('<p> Competitor 3:  ' + data3.mnop + '</p>')
+      if (data3.abcd || data3.defg || data3.hijk || data3.mnop === 'undefined') {
+        console.log("All Rooms Booked")
+      }
     }
   });
+
+
 });
