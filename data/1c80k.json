@@ -1,1 +1,24 @@
-{"destination":"Singapore","hotels":[{"id":"abcd","name":"Singapore Marriott Hotel","address":"320 Orchard Road","image":"https://d2ey9sqrvkqdfs.cloudfront.net/D9dv/0.jpg"},{"id":"defg","name":"Pan Pacific Singapore","address":"7 Raffles Boulevard","image":"https://d2ey9sqrvkqdfs.cloudfront.net/QDaO/0.jpg"},{"id":"hjkl","name":"Marina Mandarin Singapore","address":"6 Raffles Boulevard","image":"https://d2ey9sqrvkqdfs.cloudfront.net/VIDV/0.jpg"},{"id":"mnop","name":"Grand Hyatt Singapore","address":"10 Scotts Road","image":"https://d2ey9sqrvkqdfs.cloudfront.net/6KSS/0.jpg"}]}
+{
+  "destination": "Singapore",
+  "hotels": [{
+    "id": "abcd",
+    "name": "Singapore Marriott Hotel",
+    "address": "320 Orchard Road",
+    "image": "https://d2ey9sqrvkqdfs.cloudfront.net/D9dv/0.jpg"
+  }, {
+    "id": "defg",
+    "name": "Pan Pacific Singapore",
+    "address": "7 Raffles Boulevard",
+    "image": "https://d2ey9sqrvkqdfs.cloudfront.net/QDaO/0.jpg"
+  }, {
+    "id": "hjkl",
+    "name": "Marina Mandarin Singapore",
+    "address": "6 Raffles Boulevard",
+    "image": "https://d2ey9sqrvkqdfs.cloudfront.net/VIDV/0.jpg"
+  }, {
+    "id": "mnop",
+    "name": "Grand Hyatt Singapore",
+    "address": "10 Scotts Road",
+    "image": "https://d2ey9sqrvkqdfs.cloudfront.net/6KSS/0.jpg"
+  }]
+}
